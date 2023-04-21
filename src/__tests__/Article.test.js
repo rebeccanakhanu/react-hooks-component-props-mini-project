@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Article(props) {
-  const { title, date = 'January 1, 1970', preview } = props;
+function Article({article}) {
+  const { title, date = 'January 1, 1970', preview } = article;
   return (
     <article>
       <h3>{title}</h3>
@@ -12,3 +12,5 @@ function Article(props) {
 }
 
 export default Article;
+
+
